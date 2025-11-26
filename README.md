@@ -1,5 +1,5 @@
-# Online Healthcare Management System  
-### Review 1 Submission – Java Web Based Project  
+# 🏥 Online Healthcare Management System  
+### Review 1 – Java Web Based Project  
 **Team Members:**  
 - **Jai Sarkar (Leader)**  
 - **Piyush Yadav**  
@@ -7,56 +7,67 @@
 
 ---
 
-## 📌 Project Overview
-This is a Java-based **Online Healthcare Management System** developed as part of the **3rd Semester Review-1 Java Web-Based Project**.  
-The system provides **role-based dashboards** for:
+## 📌 Project Overview  
+The **Online Healthcare Management System** is a Java-based web application designed to simplify healthcare operations for **Admins, Doctors, and Patients**.  
+It allows users to log in, manage appointments, and interact through role-based dashboards.
 
-- **Admin**
-- **Doctor**
-- **Patient**
+This project is built using **JSP, Servlets, JDBC, MySQL, and Apache Tomcat**, following MVC architecture.
 
-It is built using **JSP, Servlets, JDBC, MySQL, Eclipse IDE, and Apache Tomcat 10**.
+This repository contains all the code submitted for **Review-1**, including:  
+✔ Login System  
+✔ Admin User Management  
+✔ Patient Appointment Booking  
+✔ Doctor Appointment View  
+✔ Database Connectivity (JDBC)  
+✔ JSP–Servlet–DAO Back-end Flow  
 
 ---
 
 ## 🎯 Objectives (Review-1 Scope)
-Review-1 focuses on implementing:
+The main goals achieved in Review-1 are:
 
-- Core Java & OOP concepts  
-- Database design & JDBC connectivity  
-- Servlets + JSP flow  
-- Project structure setup  
-- Basic working module demonstration  
-
-This project **meets all Review-1 requirements**.
-
----
-
-## 🏗 Technologies Used
-- **Java (JDK 17)**
-- **JSP / Servlets**
-- **JDBC**
-- **Apache Tomcat 10**
-- **MySQL Workbench**
-- **Eclipse IDE**
-- **HTML / CSS (Basic)**
+- Implementing **Core Java + OOP concepts**  
+- Creating a working **web-based healthcare prototype**  
+- Setting up **database schema, JDBC connectivity & DAO pattern**  
+- Designing **role-based login + dashboards**  
+- Implementing **appointment booking and viewing**  
+- Demonstrating complete **Servlet → DAO → DB** integration  
 
 ---
 
-## 📂 Project Structure (Review-1)
+## 🏗️ Technology Stack  
+
+### **Frontend**
+- JSP  
+- HTML  
+- CSS (Basic)
+
+### **Backend**
+- Java (JDK 17)  
+- Servlets  
+- JDBC (MySQL Connectivity)
+
+### **Tools & Platform**
+- Apache Tomcat 10  
+- Eclipse IDE  
+- MySQL Workbench  
+- GitHub  
+
+---
+
+## 📂 Project Structure  
 
 src/main/java
-├── com.healthcare.model
-├── com.healthcare.dao
-├── com.healthcare.servlet
-└── com.healthcare.util (DBUtil.java)
+├── com.healthcare.model # User, Appointment models
+├── com.healthcare.dao # UserDAO, AppointmentDAO
+├── com.healthcare.servlet # Login, Appointment, Doctor/Patient controllers
+└── com.healthcare.util # DBUtil for JDBC connection
 
 src/main/webapp
 ├── login.jsp
-├── index.jsp
 ├── admin-dashboard.jsp
+├── admin-add-user.jsp
 ├── patient-dashboard.jsp
-├── doctor-dashboard.jsp
 ├── appointment.jsp
 ├── patient-appointments.jsp
 └── doctor-appointments.jsp
@@ -66,62 +77,105 @@ Copy code
 
 ---
 
-## 🗄 Database Schema (Review-1 Tables)
+## 🗄️ Database Schema
 
-### 1. `users`  
-Stores admin, doctor, and patient records.
+### Database Name:
+healthcare_db
 
-### 2. `appointments`  
-Stores appointment booking details.
+yaml
+Copy code
 
-> Note: Advanced tables (medical_records etc.) are part of Review-2.
+### Tables (Review-1):
+1. **users**
+2. **appointments**
+
+### `users` fields:
+- id  
+- name  
+- email  
+- password  
+- role (admin/doctor/patient)  
+
+### `appointments` fields:
+- id  
+- patient_id  
+- doctor_id  
+- appointment_datetime  
+- status  
+- reason  
 
 ---
 
-## ✔ Features Completed (Review-1)
+## ✔️ Features Implemented (Review 1)
 
 ### 🔹 **1. User Authentication**
 - Login using email + password  
-- Role-based redirection (Admin / Doctor / Patient)
-
-### 🔹 **2. Admin Module**
-- Add new user (Admin/Doctor/Patient)
-- Input validation
-
-### 🔹 **3. Patient Module**
-- Book appointment  
-- View appointment history  
-
-### 🔹 **4. Doctor Module**
-- View scheduled appointments
-
-### 🔹 **5. JDBC + MySQL Integration**
-- DBUtil connection class  
-- DAO classes for CRUD operations  
-- PreparedStatements used (secure)
+- Role-based redirection  
+  - Admin → Admin Dashboard  
+  - Doctor → Doctor Dashboard  
+  - Patient → Patient Dashboard  
 
 ---
 
-## 🚀 How to Run the Project
+### 🔹 **2. Admin Module**
+- Add new Users (Admin / Doctor / Patient)  
+- Form validation  
+- Data stored securely in MySQL  
 
-### 1️⃣ Import project  
-- File → Import → Dynamic Web Project  
-- Select downloaded folder
+---
 
-### 2️⃣ Setup MySQL DB  
-Run the SQL scripts inside `/database` or create tables manually.
+### 🔹 **3. Patient Module**
+- Book Appointment  
+- View Appointment History  
+- Data saved using DAO + JDBC  
 
-### 3️⃣ Add MySQL Connector JAR  
-Place `mysql-connector-j.jar` inside:
-src/main/webapp/WEB-INF/lib
+---
 
-shell
+### 🔹 **4. Doctor Module**
+- View Assigned Appointments  
+- Appointment details loaded from DB  
+
+---
+
+### 🔹 **5. JDBC Connectivity**
+- `DBUtil.java` created for re-usable DB connection  
+- DAO layer uses PreparedStatements  
+- `/testdb` servlet confirms successful MySQL connectivity  
+
+---
+
+## 🚀 How to Run This Project
+
+### 1️⃣ Clone the repository
+git clone https://github.com/your-repo-name.git
+
+yaml
 Copy code
 
-### 4️⃣ Configure Tomcat 10  
-Add project → Start server.
+### 2️⃣ Import into Eclipse  
+`File → Import → Dynamic Web Project`
 
-### 5️⃣ Access in browser:
+### 3️⃣ Setup MySQL Database  
+Run:
+USE healthcare_db;
+
+yaml
+Copy code
+Tables:
+- users  
+- appointments  
+
+### 4️⃣ Add MySQL Connector  
+Place the JAR inside:
+WebContent/WEB-INF/lib
+
+mathematica
+Copy code
+
+### 5️⃣ Run Project  
+`Right-click Project → Run on Server (Tomcat 10)`  
+
+Open in browser:
 http://localhost:8080/OnlineHealthcareSystem/
 
 yaml
@@ -129,41 +183,91 @@ Copy code
 
 ---
 
-## 🎥 Review-1 Demonstration Checklist (All Working)
+# 📸 Screenshots (Review-1)
 
-- Login ✔  
-- Add user (Admin) ✔  
-- Book appointment (Patient) ✔  
-- View appointment history (Patient) ✔  
-- View appointments (Doctor) ✔  
-- DB Connectivity ✔  
-- JSP + Servlet + DAO flow ✔  
+> All screenshots are placed inside `/screenshots/` folder.
+
+### **1️⃣ Project Folder Structure**
+<img width="756" height="859" alt="image" src="https://github.com/user-attachments/assets/2ead2974-a8d6-4129-b9be-f710e06e8fa3" />
+
 
 ---
 
-## 📌 Future Enhancements (Review-2)
-
-- Medical Records Module  
-- Schedule Management  
-- Profile Management  
-- Admin Reports & Analytics  
-- Bootstrap UI upgrade  
-- Email notification system  
+### **2️⃣ Database Tables**
+![DB Tables](screenshots/db_tables.png)
 
 ---
 
-## ⭐ Team Contribution
-| Member | Role | Contribution |
-|--------|------|--------------|
-| **Jai Sarkar** | Leader | Backend coding (Servlets, DAO, JDBC), DB setup |
-| **Piyush Yadav** | Member | Documentation & Testing |
+### **3️⃣ Database Connection Test (/testdb)**
+![DB Test](screenshots/db_connection_success.png)
+
+---
+
+### **4️⃣ Login Page**
+![Login Page](screenshots/login_page.png)
+
+---
+
+### **5️⃣ Admin – Add User Page**
+![Admin Add User](screenshots/admin_add_user.png)
+
+---
+
+### **6️⃣ Patient Dashboard**
+![Patient Dashboard](screenshots/patient_dashboard.png)
+
+---
+
+### **7️⃣ Appointment Booking Page**
+![Appointment Booking](screenshots/appointment_booking.png)
+
+---
+
+### **8️⃣ Appointment Booked Successfully**
+![Booking Success](screenshots/appointment_success.png)
+
+---
+
+### **9️⃣ Doctor Dashboard**
+![Doctor Dashboard](screenshots/doctor_dashboard.png)
+
+---
+
+### **🔟 Doctor Appointment List**
+![Doctor Appointments](screenshots/doctor_appointments_list.png)
+
+---
+
+### **1️⃣1️⃣ Patient Appointment History**
+![Patient Appointments](screenshots/patient_appointments_history.png)
+
+---
+
+## 👥 Team Contribution
+
+| Member | Role | Work Done |
+|--------|------|-----------|
+| **Jai Sarkar** | Leader | Full coding – Servlets, DAO, JDBC, DB setup |
+| **Piyush Yadav** | Member | Testing, Documentation |
 | **Farhan Akhtar** | Member | Presentation & UI support |
 
 ---
 
-## 📝 License
-This project is created for academic purposes under Galgotias University 3rd Semester Review-1 submission.
+## 📌 Conclusion  
+The Online Healthcare Management System fulfills **all Review-1 requirements**, including:
+
+✔ Core Java  
+✔ OOP Concepts  
+✔ Servlets  
+✔ JSP  
+✔ JDBC  
+✔ Database Integration  
+✔ Functional Modules  
+
+The project is ready for **Review-2 enhancements** like:  
+- Medical Records  
+- Admin Analytics  
+- Profile Management  
+- UI Upgrade  
 
 ---
-
-# 👍 Thank you!
