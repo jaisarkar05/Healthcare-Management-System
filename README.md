@@ -194,52 +194,65 @@ Copy code
 ---
 
 ### **2️⃣ Database Tables**
-![DB Tables](screenshots/db_tables.png)
+<img width="528" height="228" alt="image" src="https://github.com/user-attachments/assets/055be50b-f5d9-4372-b3c0-c15da86a0306" />
+<img width="467" height="181" alt="image" src="https://github.com/user-attachments/assets/70e88368-8bb4-4699-bf27-b3c78e7e3cde" />
+
+
 
 ---
 
 ### **3️⃣ Database Connection Test (/testdb)**
-![DB Test](screenshots/db_connection_success.png)
+<img width="794" height="208" alt="image" src="https://github.com/user-attachments/assets/413eeaf6-e7ce-4e5e-bb27-b985004080d0" />
+
 
 ---
 
 ### **4️⃣ Login Page**
-![Login Page](screenshots/login_page.png)
+<img width="640" height="302" alt="image" src="https://github.com/user-attachments/assets/0bd231b8-25ae-41c0-9e98-771fc235783d" />
+
 
 ---
 
 ### **5️⃣ Admin – Add User Page**
-![Admin Add User](screenshots/admin_add_user.png)
+<img width="735" height="394" alt="image" src="https://github.com/user-attachments/assets/231fa554-d821-44e6-88ee-b7a9486a2979" />
+
 
 ---
 
 ### **6️⃣ Patient Dashboard**
-![Patient Dashboard](screenshots/patient_dashboard.png)
+<img width="758" height="259" alt="image" src="https://github.com/user-attachments/assets/f343c8e2-8cac-4347-ae88-d941fb045ab2" />
+
 
 ---
 
 ### **7️⃣ Appointment Booking Page**
-![Appointment Booking](screenshots/appointment_booking.png)
+<img width="710" height="381" alt="image" src="https://github.com/user-attachments/assets/2f02d113-342f-46f3-9e3c-cf224a1623e7" />
+
 
 ---
 
 ### **8️⃣ Appointment Booked Successfully**
-![Booking Success](screenshots/appointment_success.png)
+<img width="702" height="236" alt="image" src="https://github.com/user-attachments/assets/95a32527-5b3f-4106-aaa3-8098f91df1ac" />
+
 
 ---
 
 ### **9️⃣ Doctor Dashboard**
-![Doctor Dashboard](screenshots/doctor_dashboard.png)
+<img width="743" height="276" alt="image" src="https://github.com/user-attachments/assets/57bc79e8-b78f-462e-9b5d-9e4892d80991" />
+
+
 
 ---
 
 ### **🔟 Doctor Appointment List**
-![Doctor Appointments](screenshots/doctor_appointments_list.png)
+<img width="796" height="301" alt="image" src="https://github.com/user-attachments/assets/259aeb15-678c-408a-a852-cf6e74337b10" />
+
 
 ---
 
 ### **1️⃣1️⃣ Patient Appointment History**
-![Patient Appointments](screenshots/patient_appointments_history.png)
+<img width="794" height="327" alt="image" src="https://github.com/user-attachments/assets/417018fa-72a8-4c52-a97c-de6d656c7479" />
+
 
 ---
 
