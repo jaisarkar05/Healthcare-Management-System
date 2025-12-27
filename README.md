@@ -1,9 +1,5 @@
 # 🏥 Online Healthcare Management System  
-### Review 1 – Java Web Based Project  
-**Team Members:**  
-- **Jai Sarkar (Leader)**  
-- **Piyush Yadav**  
-- **Farhan Akhtar**
+
 
 ---
 
