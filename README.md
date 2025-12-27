@@ -266,7 +266,7 @@ Copy code
 
 ---
 
-## 📌 Conclusion  
+## Conclusion  
 The Online Healthcare Management System fulfills **all Review-1 requirements**, including:
 
 ✔ Core Java  
@@ -277,10 +277,6 @@ The Online Healthcare Management System fulfills **all Review-1 requirements**, 
 ✔ Database Integration  
 ✔ Functional Modules  
 
-The project is ready for **Review-2 enhancements** like:  
-- Medical Records  
-- Admin Analytics  
-- Profile Management  
-- UI Upgrade  
+
 
 ---
